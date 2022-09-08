@@ -1,0 +1,238 @@
+          <div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Changer votre mot de passe</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+              <form action="change_mdp.php" method="POST">
+                  <div class="modal-body">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Ancien:</label>
+                        <input type="password" minlength="4" maxlength="8" name="mdp1" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nouveau:</label>
+                        <input type="password" minlength="4" maxlength="8" name="mdp" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Confirmer nouveau:</label>
+                        <input type="password" minlength="4" maxlength="8" name="mdp2" class="form-control" required>
+                      </div>
+                   
+                  </div>
+                  <div class="modal-footer">
+                    <input type="submit" value="Changer" class="btn-s main-button pull-right"/>
+                     </div>   
+              </form>
+         
+          </div>
+        </div>
+      </div>
+          <div class="modal fade bd-example-modal-sm" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content  bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Administrateur</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="text-white" aria-hidden="true">&times;</span>
+              </button>
+            </div>
+              <form action="admin.php" method="POST">
+                  <div class="modal-body">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nom:</label>
+                        <input type="text" maxlength="14" name="nom" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Mot de passe</label>
+                        <input type="password" minlength="4" maxlength="14" name="mdp" class="form-control">
+                      </div>
+                                          <div class="custom-control custom-switch">
+                      <input type="checkbox" name="admin" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1">Se souvenir de moi</label>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <input type="submit" value="Connexion" class="btn-s main-button pull-right"/>
+                     </div>   
+              </form>
+         
+          </div>
+        </div>
+      </div>
+          <div class="modal fade bd-example-modal-sm" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Changer le mot de passe_admin</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+              <form action="change_mdp_a.php" method="POST">
+                  <div class="modal-body">
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Ancien:</label>
+                        <input type="password" minlength="4" maxlength="14" name="mdp1" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nouveau:</label>
+                        <input type="password" minlength="4" maxlength="14" name="mdp" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Confirmer nouveau:</label>
+                        <input type="password" minlength="4" maxlength="14" name="mdp2" class="form-control" required>
+                      </div>
+                   
+                  </div>
+                  <div class="modal-footer">
+                    <input type="submit" value="Changer" class="btn-s main-button pull-right"/>
+                     </div>   
+              </form>
+         
+          </div>
+        </div>
+      </div>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary"> <a class="navbar-brand" href="index.php">  <div class="container">
+        <h3 class="text-white"><img src="images/logrdt.jpg" class="mr-2"width="50px" height="40px">
+       RDT</h3></a> 
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                  <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                 
+            <ul class="navbar-nav ml-auto"> <li class="nav-item bg-dark"> <a class="nav-link" href="index.php"><i class="fas fa-home"></i>Accueil </a> </li>
+
+                                <li class="nav-item bg-dark"> 
+                              <a class="nav-link" href="evenement.php" id="navbarDropdown"
+                              > <i class="fas fa-calendar-week"></i> Agenda </a> 
+                               </li> 
+                            <li class="nav-item bg-dark"> 
+                            <a class="nav-link " href="actualite.php" id="navbarDropdown">
+                               <i class="far fa-newspaper"></i> Actualités </a> 
+                                </a>
+                             </li>
+                            <li class="nav-item bg-dark"> 
+                            <a class="nav-link " href="leader.php" id="navbarDropdown"
+                            > <i class="fas fa-crown"></i> Notre Leader </a> 
+                                </a>
+                             </li> 
+              </ul>
+                </div></div>
+  </nav>
+       <style type="text/css">
+         
+         .nav-scroller .nav
+          {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            padding-top: 6rem;
+            margin-top: 1px;
+            overflow-x: auto;
+            color: rgba(255, 255, 255, .75);
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+            .contact-form textarea.input
+          {
+              height: 200px;
+          }
+          .contact-form .input 
+          {
+              margin-bottom: 20px;
+          }
+               input.input, textarea 
+              {
+              height: 40px;
+              width: 200%;
+              border: 1px solid black;
+              border-radius: 4px;
+              background: black;
+              color: white;
+              padding-left: 15px;
+              padding-right: 15px;
+              -webkit-transition: 0.2s border-color;
+              transition: 0.2s border-color;
+          }
+                textarea {
+              -webkit-writing-mode: horizontal-tb !important;
+              text-rendering: auto;
+              color: -internal-light-dark-color(black, white);
+              letter-spacing: normal;
+              word-spacing: normal;
+              text-transform: none;
+              text-indent: 0px;
+              text-shadow: none;
+              display: inline-block;
+              text-align: start;
+              -webkit-appearance: textarea;
+              background-color: -internal-light-dark-color(white, black);
+              -webkit-rtl-ordering: logical;
+              flex-direction: column;
+              resize: auto;
+              cursor: text;
+              white-space: pre-wrap;
+              overflow-wrap: break-word;
+              margin: 0em;
+              font: 400 13.3333px Arial;
+              border-width: 1px;
+              border-style: solid;
+              border-color: rgb(169, 169, 169);
+              border-image: initial;
+              padding: 2px;
+          }
+          textarea:focus {
+              outline-offset: -2px;
+          }
+          .main-button {
+              position: relative;
+              display: inline-block;
+              padding: 10px 30px;
+              background-color:  #007bff;
+              border: 2px solid transparent;
+              border-radius: 40px;
+              color: #FFF;
+              -webkit-transition: 0.2s all;
+              transition: 0.2s all;
+          }
+          .btn-s{
+            padding: 8px 15px;
+          }
+          button {
+              -webkit-appearance: button;
+              -webkit-writing-mode: horizontal-tb !important;
+              text-rendering: auto;
+              color: buttontext;
+              letter-spacing: normal;
+              word-spacing: normal;
+              text-indent: 0px;
+              text-shadow: none;
+              display: inline-block;
+              text-align: center;
+              align-items: flex-start;
+              cursor: default;
+              background-color: buttonface;
+              box-sizing: border-box;
+              margin: 0em;
+              font: 400 13.3333px Arial;
+              padding: 1px 6px;
+              border-width: 2px;
+              border-style: outset;
+              border-color: buttonface;
+              border-image: initial;
+          }
+          .main-button:hover, .main-button:focus {
+              background-color: #fff;
+              border: 2px solid #007bff;
+              color: #007bff;
+          }
+          .main-button.icon-button:hover, .main-button.icon-button:focus {
+              padding-right: 45px;
+          }
+       </style>
